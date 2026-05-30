@@ -7,7 +7,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
+  title: 'Wenura Denethpriya',
   description: 'A modern portfolio website showcasing my work and experience',
   generator: 'v0.app',
   viewport: 'width=device-width, initial-scale=1, maximum-scale=5',

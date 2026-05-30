@@ -243,9 +243,24 @@ export function Experience() {
 
         <Tabs defaultValue="experience" className="w-full">
           <TabsList className="grid w-full grid-cols-3 bg-white/10 border border-white/20 mb-12 rounded-lg p-1">
-            <TabsTrigger value="experience" className="rounded-md">Professional</TabsTrigger>
-            <TabsTrigger value="education" className="rounded-md">Education</TabsTrigger>
-            <TabsTrigger value="certifications" className="rounded-md">Certifications</TabsTrigger>
+            <TabsTrigger
+              value="experience"
+              className="rounded-md text-slate-300 transition-all data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-500 data-[state=active]:to-purple-500 data-[state=active]:text-white data-[state=active]:shadow-lg"
+            >
+              Professional
+            </TabsTrigger>
+            <TabsTrigger
+              value="education"
+              className="rounded-md text-slate-300 transition-all data-[state=active]:bg-gradient-to-r data-[state=active]:from-cyan-500 data-[state=active]:to-blue-500 data-[state=active]:text-white data-[state=active]:shadow-lg"
+            >
+              Education
+            </TabsTrigger>
+            <TabsTrigger
+              value="certifications"
+              className="rounded-md text-slate-300 transition-all data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-500 data-[state=active]:to-pink-500 data-[state=active]:text-white data-[state=active]:shadow-lg"
+            >
+              Certifications
+            </TabsTrigger>
           </TabsList>
 
           {/* Professional Experience Tab */}
@@ -341,7 +356,7 @@ export function Experience() {
               {certificationsData.map((cert, index) => {
                 // FIXED: Assign the icon to a capitalized variable so React knows it's a component
                 const Icon = cert.icon;
-                
+
                 return (
                   <motion.div
                     key={index}
@@ -356,13 +371,13 @@ export function Experience() {
                         </h3>
                         <p className="text-purple-400 text-sm">{cert.issuer}</p>
                       </div>
-                      
+
                       {/* FIXED: Render it as an actual component */}
                       <div className="ml-2 flex-shrink-0">
                         <Icon className="w-8 h-8 text-slate-400 group-hover:text-purple-400 transition-colors duration-300" />
                       </div>
                     </div>
-                    
+
                     <p className="text-slate-400 text-sm mb-2">Issued: {cert.date}</p>
                     <p className="text-slate-500 text-xs mb-4">ID: {cert.credentialId}</p>
                     <motion.a
