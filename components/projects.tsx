@@ -5,9 +5,44 @@ import { useState } from 'react';
 
 const projects = [
   {
+    id: 2,
+    title: 'Lost & Found Report System',
+    category: 'developments',
+    description: 'Interactive dashboard for visualizing business metrics and KPIs with real-time updates.',
+    tags: ['React', 'TypeScript', 'Node.js', 'MongoDB'],
+    preview: 'https://lfrs.wenuradenethpriya.com',
+    github: 'https://github.com/VenuraDenethpriya/LFRS.git',
+    images: [
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780161143/Screenshot_301_abzbin.png',
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780161140/Screenshot_309_ppxewd.png',
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780161148/Screenshot_302_l9pzbe.png',
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780161141/Screenshot_304_giu6gw.png',
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780161141/Screenshot_303_hmfppn.png',
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780161141/Screenshot_305_ybu1va.png',
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780161140/Screenshot_308_w9wskd.png',
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780161140/Screenshot_307_m7aj5m.png',
+    ],
+  },
+  {
+    id: 5,
+    title: 'ERP System',
+    category: 'developments',
+    description: 'Comprehensive component library and design system for enterprise applications.',
+    tags: ['React','Go Lang','PostgreSQL', 'Docker', 'GitHub Actions', 'AWS'],
+    preview: 'https://coresync.wenuradenethpriya.com/',
+    github: 'https://github.com/VenuraDenethpriya/CoreSync-ERP.git',
+    images: [
+      // 'https://res.cloudinary.com/dlccif9no/image/upload/v1780162998/Screenshot_318_ufqugj.png',
+      // 'https://res.cloudinary.com/dlccif9no/image/upload/v1780163003/Screenshot_323_uszn1j.png',
+      // 'https://res.cloudinary.com/dlccif9no/image/upload/v1780162997/Screenshot_321_p9huaw.png',
+      // 'https://res.cloudinary.com/dlccif9no/image/upload/v1780162997/Screenshot_320_kungoz.png',
+      // 'https://res.cloudinary.com/dlccif9no/image/upload/v1780162997/Screenshot_322_ottk0p.png',
+    ],
+  },
+  {
     id: 1,
     title: 'E-Commerce Platform',
-    category: 'fullstack',
+    category: 'developments',
     description: 'A modern e-commerce solution with real-time inventory management and payment integration.',
     tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
     preview: 'https://technest.wenuradenethpriya.com',
@@ -25,79 +60,103 @@ const projects = [
       'https://res.cloudinary.com/dlccif9no/image/upload/v1780143034/Screenshot_298_odm0kx.png',
     ],
   },
-  {
-    id: 2,
-    title: 'Lost & Found Report System',
+   {
+    id: 4,
+    title: 'Renewaa Site',
     category: 'frontend',
-    description: 'Interactive dashboard for visualizing business metrics and KPIs with real-time updates.',
-    tags: ['React', 'TypeScript', 'Node.js', 'MongoDB'],
-    preview: 'https://lfrs.wenuradenethpriya.com',
-    github: 'https://github.com/VenuraDenethpriya/LFRS.git',
+    description: 'Comprehensive component library and design system for enterprise applications.',
+    tags: ['Next.js', 'Docker', 'GitHub Actions'],
+    preview: 'https://renewaa.com',
+    github: 'https://github.com/VenuraDenethpriya/Renewaa-Website.git',
     images: [
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop',
-      'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop',
-      'https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=500&h=300&fit=crop',
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780162998/Screenshot_318_ufqugj.png',
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780163003/Screenshot_323_uszn1j.png',
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780162997/Screenshot_321_p9huaw.png',
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780162997/Screenshot_320_kungoz.png',
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780162997/Screenshot_322_ottk0p.png',
     ],
   },
   {
     id: 3,
-    title: 'Social Media App',
-    category: 'fullstack',
+    title: 'Travel Agency Site',
+    category: 'developments',
     description: 'Full-featured social networking application with messaging, notifications, and feeds.',
-    tags: ['Next.js', 'PostgreSQL', 'Real-time'],
-    preview: 'https://example.com/social',
-    github: 'https://github.com/example/social',
+    tags: ['Next.js', 'PostgreSQL', 'Stripe'],
+    preview: 'https://travelagency.wenuradenethpriya.com',
+    github: 'https://github.com/VenuraDenethpriya/travel_agency.git',
     images: [
-      'https://images.unsplash.com/photo-1611262588024-d12430b98920?w=500&h=300&fit=crop',
-      'https://images.unsplash.com/photo-1516414775068-bb385b6b91b6?w=500&h=300&fit=crop',
-      'https://images.unsplash.com/photo-1557821552-17105176677c?w=500&h=300&fit=crop',
-    ],
-  },
-  {
-    id: 4,
-    title: 'Design System',
-    category: 'frontend',
-    description: 'Comprehensive component library and design system for enterprise applications.',
-    tags: ['React', 'Storybook', 'Tailwind CSS'],
-    preview: 'https://example.com/design-system',
-    github: 'https://github.com/example/design-system',
-    images: [
-      'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop',
-      'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop',
-      'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop',
-    ],
-  },
-  {
-    id: 5,
-    title: 'AI Chat Application',
-    category: 'fullstack',
-    description: 'Intelligent chatbot powered by machine learning with context awareness.',
-    tags: ['Python', 'FastAPI', 'React', 'TensorFlow'],
-    preview: 'https://example.com/ai-chat',
-    github: 'https://github.com/example/ai-chat',
-    images: [
-      'https://images.unsplash.com/photo-1515378791036-0648a3e3d34d?w=500&h=300&fit=crop',
-      'https://images.unsplash.com/photo-1526374965328-7f5ae4e8e7f9?w=500&h=300&fit=crop',
-      'https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop',
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780162009/Screenshot_310_wgp2wg.png',
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780162008/Screenshot_311_swqlsi.png',
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780162009/Screenshot_313_mddypc.png',
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780162007/Screenshot_314_riicvf.png',
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780162009/Screenshot_316_bupqui.png',
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780162010/Screenshot_315_emtvm3.png',
+      'https://res.cloudinary.com/dlccif9no/image/upload/v1780162008/Screenshot_312_gvy2t2.png',
     ],
   },
   {
     id: 6,
-    title: 'Mobile App',
-    category: 'frontend',
-    description: 'Cross-platform mobile application with offline support and sync capabilities.',
-    tags: ['React Native', 'Firebase', 'Redux'],
-    preview: 'https://example.com/mobile',
-    github: 'https://github.com/example/mobile',
-    images: [
-      'https://images.unsplash.com/photo-1512941691920-25bef266aad1?w=500&h=300&fit=crop',
-      'https://images.unsplash.com/photo-1511376979264-c8440dd00c5e?w=500&h=300&fit=crop',
-      'https://images.unsplash.com/photo-1526374965328-7f5ae4e8e7f9?w=500&h=300&fit=crop',
-    ],
+    title: 'Enterprise CI/CD for React & Go',
+    category: 'devOps',
+    description: 'How to build an enterprise-grade CI/CD pipeline using Docker, GitHub Actions, and AWS.',
+    tags: ['Docker', 'GitHub Actions', 'AWS', 'CI/CD'],
+    preview: 'https://medium.com/@venurameedum/how-to-build-an-enterprise-grade-ci-cd-pipeline-for-react-go-using-docker-github-actions-aws-bd971c7d079b',
+    github: '',
+    images: ['https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=800&auto=format&fit=crop'],
   },
+  {
+    id: 7,
+    title: 'Automating MERN Deployments',
+    category: 'devOps',
+    description: 'A comprehensive guide to automating MERN stack deployments with Docker, Jenkins, and Trivy.',
+    tags: ['Docker', 'Jenkins', 'Trivy', 'MERN'],
+    preview: 'https://medium.com/@venurameedum/automating-mern-stack-deployments-with-docker-jenkins-and-trivy-ca7880bfefeb',
+    github: '',
+    images: ['https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=800&auto=format&fit=crop'],
+  },
+  {
+    id: 8,
+    title: 'React & Laravel Jenkins CI/CD on AWS',
+    category: 'devOps',
+    description: 'The ultimate guide to deploying a React & Laravel app with a Jenkins CI/CD pipeline on AWS EC2.',
+    tags: ['Jenkins', 'AWS EC2', 'React', 'Laravel'],
+    preview: 'https://medium.com/@venurameedum/the-ultimate-guide-to-deploying-a-react-laravel-app-with-a-jenkins-ci-cd-pipeline-on-aws-ec2-4cfd9daafd2a',
+    github: '',
+    images: ['https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=800&auto=format&fit=crop'],
+  },
+  {
+    id: 9,
+    title: 'Auto-Deploy React Vite App on AWS',
+    category: 'devOps',
+    description: 'A complete guide to auto-deploying a React Vite application on an AWS EC2 instance using GitHub Actions.',
+    tags: ['AWS EC2', 'GitHub Actions', 'React', 'Vite'],
+    preview: 'https://medium.com/@venurameedum/a-complete-guide-to-auto-deploying-a-react-vite-app-on-aws-ec2-using-github-actions-dffaf833fa1b',
+    github: '',
+    images: ['https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=800&auto=format&fit=crop'],
+  },
+  {
+    id: 10,
+    title: 'Auto-Deploy Node.js on AWS EC2',
+    category: 'devOps',
+    description: 'Learn how to automatically deploy a Node.js backend to AWS EC2 using GitHub Actions.',
+    tags: ['Node.js', 'AWS EC2', 'GitHub Actions'],
+    preview: 'https://medium.com/@venurameedum/a-complete-guide-to-auto-deploying-a-node-js-app-on-aws-ec2-using-github-actions-1b5bd0b7d5d7',
+    github: '',
+    images: ['https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800&auto=format&fit=crop'],
+  },
+  {
+    id: 11,
+    title: 'Jenkins Installation on AWS EC2',
+    category: 'devOps',
+    description: 'Step-by-step tutorial on how to install and configure Jenkins on an AWS EC2 instance.',
+    tags: ['Jenkins', 'AWS EC2', 'Linux'],
+    preview: 'https://medium.com/@venurameedum/jenkins-installation-on-aws-ec2-instance-09beb8d689ee',
+    github: '',
+    images: ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg'],
+  }
 ];
 
-const categories = ['all', 'frontend', 'fullstack'];
+const categories = ['all','developments','devOps' ];
 
 interface PreviewState {
   isOpen: boolean;
@@ -171,7 +230,7 @@ export function Projects() {
     }
   };
 
-  return (
+ return (
     <section id="projects" className="section-container">
       <div className="max-w-6xl mx-auto w-full">
         <motion.h2
@@ -209,10 +268,7 @@ export function Projects() {
         </motion.div>
 
         {/* Projects Grid */}
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-          layout
-        >
+        <motion.div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" layout>
           {filteredProjects.map((project, index) => {
             const currentImageIndex = getImageIndex(project.id);
             const currentImage = project.images[currentImageIndex];
@@ -237,15 +293,23 @@ export function Projects() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.3 }}
-                    onClick={() => openPreview(project.id, currentImageIndex)}
+                    onClick={() => {
+                      // ✨ NEW LOGIC: Open Medium directly for devOps, open modal for developments
+                      if (project.category === 'devOps') {
+                        window.open(project.preview, '_blank', 'noopener,noreferrer');
+                      } else {
+                        openPreview(project.id, currentImageIndex);
+                      }
+                    }}
                   />
 
-                  {/* Image Navigation */}
+                  {/* Image Navigation (Only shows if more than 1 image) */}
                   {project.images.length > 1 && (
                     <>
                       <button
                         onClick={(e) => {
                           e.preventDefault();
+                          e.stopPropagation();
                           prevImage(project.id, project.images.length);
                         }}
                         className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all z-10"
@@ -255,6 +319,7 @@ export function Projects() {
                       <button
                         onClick={(e) => {
                           e.preventDefault();
+                          e.stopPropagation();
                           nextImage(project.id, project.images.length);
                         }}
                         className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all z-10"
@@ -268,9 +333,7 @@ export function Projects() {
                           <motion.div
                             key={idx}
                             className={`h-2 rounded-full transition-all ${
-                              idx === currentImageIndex
-                                ? 'w-6 bg-white'
-                                : 'w-2 bg-white/50'
+                              idx === currentImageIndex ? 'w-6 bg-white' : 'w-2 bg-white/50'
                             }`}
                           />
                         ))}
@@ -310,17 +373,22 @@ export function Projects() {
                       whileHover={{ scale: 1.05 }}
                       className="flex-1 px-4 py-2 bg-blue-500/20 hover:bg-blue-500/40 border border-blue-400/50 text-blue-300 rounded-lg font-semibold text-sm transition-all text-center"
                     >
-                      Preview
+                      {/* ✨ NEW LOGIC: Change button text based on category */}
+                      {project.category === 'devOps' ? 'Read Article' : 'Preview'}
                     </motion.a>
-                    <motion.a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.05 }}
-                      className="flex-1 px-4 py-2 bg-purple-500/20 hover:bg-purple-500/40 border border-purple-400/50 text-purple-300 rounded-lg font-semibold text-sm transition-all text-center"
-                    >
-                      GitHub
-                    </motion.a>
+
+                    {/* ✨ NEW LOGIC: Only render GitHub button if a link exists */}
+                    {project.github && (
+                      <motion.a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        className="flex-1 px-4 py-2 bg-purple-500/20 hover:bg-purple-500/40 border border-purple-400/50 text-purple-300 rounded-lg font-semibold text-sm transition-all text-center"
+                      >
+                        GitHub
+                      </motion.a>
+                    )}
                   </div>
                 </div>
               </motion.div>
@@ -329,7 +397,7 @@ export function Projects() {
         </motion.div>
       </div>
 
-      {/* Image Preview Modal */}
+      {/* Image Preview Modal (Remains Unchanged) */}
       <AnimatePresence>
         {previewModal.isOpen && previewModal.projectId !== null && (
           <motion.div
@@ -361,7 +429,11 @@ export function Projects() {
               <div className="relative w-full h-full flex items-center justify-center">
                 <motion.img
                   key={previewModal.imageIndex}
-                  src={projects.find((p) => p.id === previewModal.projectId)?.images[previewModal.imageIndex]}
+                  src={
+                    projects.find((p) => p.id === previewModal.projectId)?.images[
+                      previewModal.imageIndex
+                    ]
+                  }
                   alt="Preview"
                   className="max-w-full max-h-full object-contain rounded-lg"
                   initial={{ opacity: 0, scale: 0.95 }}
@@ -399,7 +471,8 @@ export function Projects() {
                 <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3">
                   {/* Counter */}
                   <motion.p className="text-white text-sm font-semibold bg-black/40 px-4 py-2 rounded-full backdrop-blur-sm">
-                    {previewModal.imageIndex + 1} / {projects.find((p) => p.id === previewModal.projectId)?.images.length}
+                    {previewModal.imageIndex + 1} /{' '}
+                    {projects.find((p) => p.id === previewModal.projectId)?.images.length}
                   </motion.p>
 
                   {/* Dot Indicators */}
