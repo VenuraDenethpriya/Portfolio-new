@@ -28,7 +28,7 @@ const projects = [
     title: 'ERP System',
     category: 'developments',
     description: 'Comprehensive component library and design system for enterprise applications.',
-    tags: ['React','Go Lang','PostgreSQL', 'Docker', 'GitHub Actions', 'AWS'],
+    tags: ['React', 'Go Lang', 'PostgreSQL', 'Docker', 'GitHub Actions', 'AWS'],
     preview: 'https://coresync.wenuradenethpriya.com/',
     github: 'https://github.com/VenuraDenethpriya/CoreSync-ERP.git',
     images: [
@@ -60,7 +60,7 @@ const projects = [
       'https://res.cloudinary.com/dlccif9no/image/upload/v1780143034/Screenshot_298_odm0kx.png',
     ],
   },
-   {
+  {
     id: 4,
     title: 'Renewaa Site',
     category: 'frontend',
@@ -93,6 +93,16 @@ const projects = [
       'https://res.cloudinary.com/dlccif9no/image/upload/v1780162010/Screenshot_315_emtvm3.png',
       'https://res.cloudinary.com/dlccif9no/image/upload/v1780162008/Screenshot_312_gvy2t2.png',
     ],
+  },
+  {
+    id: 12,
+    title: 'Zero to Cloud: AWS with Terraform',
+    category: 'devOps',
+    description: 'A comprehensive guide to provisioning and deploying your first AWS EC2 server using Terraform for Infrastructure as Code (IaC).',
+    tags: ['Terraform', 'AWS EC2', 'IaC', 'Cloud'],
+    preview: 'https://medium.com/@venurameedum/zero-to-cloud-deploying-your-first-aws-server-with-terraform-520f742504e3',
+    github: '',
+    images: ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg'],
   },
   {
     id: 6,
@@ -156,7 +166,7 @@ const projects = [
   }
 ];
 
-const categories = ['all','developments','devOps' ];
+const categories = ['all', 'developments', 'devOps'];
 
 interface PreviewState {
   isOpen: boolean;
@@ -230,7 +240,7 @@ export function Projects() {
     }
   };
 
- return (
+  return (
     <section id="projects" className="section-container">
       <div className="max-w-6xl mx-auto w-full">
         <motion.h2
@@ -254,11 +264,10 @@ export function Projects() {
             <motion.button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-6 py-2 rounded-full font-semibold text-sm capitalize transition-all ${
-                activeCategory === category
+              className={`px-6 py-2 rounded-full font-semibold text-sm capitalize transition-all ${activeCategory === category
                   ? 'bg-blue-500 text-white'
                   : 'glass text-slate-300 hover:text-white'
-              }`}
+                }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -332,9 +341,8 @@ export function Projects() {
                         {project.images.map((_, idx) => (
                           <motion.div
                             key={idx}
-                            className={`h-2 rounded-full transition-all ${
-                              idx === currentImageIndex ? 'w-6 bg-white' : 'w-2 bg-white/50'
-                            }`}
+                            className={`h-2 rounded-full transition-all ${idx === currentImageIndex ? 'w-6 bg-white' : 'w-2 bg-white/50'
+                              }`}
                           />
                         ))}
                       </div>
@@ -431,7 +439,7 @@ export function Projects() {
                   key={previewModal.imageIndex}
                   src={
                     projects.find((p) => p.id === previewModal.projectId)?.images[
-                      previewModal.imageIndex
+                    previewModal.imageIndex
                     ]
                   }
                   alt="Preview"
@@ -482,11 +490,10 @@ export function Projects() {
                       ?.images.map((_, idx) => (
                         <motion.button
                           key={idx}
-                          className={`rounded-full transition-all ${
-                            idx === previewModal.imageIndex
+                          className={`rounded-full transition-all ${idx === previewModal.imageIndex
                               ? 'w-3 h-3 bg-white'
                               : 'w-2 h-2 bg-white/50 hover:bg-white/70'
-                          }`}
+                            }`}
                           onClick={() =>
                             setPreviewModal((prev) => ({
                               ...prev,

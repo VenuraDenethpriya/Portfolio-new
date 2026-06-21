@@ -13,11 +13,11 @@ const skillCategories = [
   },
   {
     title: 'Databases & Cloud',
-    skills: ['MongoDB', 'PostgreSQL', 'Supabase', 'AWS', 'GCP', 'Azure', 'Oracle Cloud', 'Vercel'],
+    skills: ['MongoDB', 'PostgreSQL', 'Supabase', 'AWS', 'GCP', 'Azure', 'Oracle Cloud', 'Vercel', 'Cloudflare'],
   },
   {
     title: 'DevOps & Tools',
-    skills: ['Docker', 'Kubernetes', 'GitHub Actions', 'Linux', 'Jenkins'],
+    skills: ['Docker', 'Kubernetes', 'GitHub Actions', 'Linux', 'Jenkins', 'Terraform'],
   },
 ];
 
