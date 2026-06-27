@@ -17,7 +17,7 @@ const skillCategories = [
   },
   {
     title: 'DevOps & Tools',
-    skills: ['Docker', 'Kubernetes', 'GitHub Actions', 'Linux', 'Jenkins', 'Terraform'],
+    skills: ['Docker', 'Kubernetes', 'GitHub Actions', 'Linux', 'Jenkins', 'Terraform', 'ArgoCD', "Prometheus", "Grafana"],
   },
 ];
 
