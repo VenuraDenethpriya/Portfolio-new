@@ -6,6 +6,15 @@ import { useState } from 'react';
 const blogPosts = [
   {
     id: 1,
+    title: 'Automating AWS DNS Pinholes with Go',
+    excerpt: 'A comprehensive guide to automating AWS DNS pinholes and managing Route 53 records programmatically using Go.',
+    date: 'Recent',
+    readTime: '5 min read',
+    category: 'Go',
+    link: 'https://medium.com/@venurameedum/automating-aws-dns-pinholes-with-go-a489909f0afc'
+  },
+  {
+    id: 2,
     title: 'Monitoring Application Health with Prometheus & Grafana',
     excerpt: 'Building a complete DevOps control room to monitor application health and metrics using Prometheus and Grafana.',
     date: 'Recent',
@@ -14,7 +23,7 @@ const blogPosts = [
     link: 'https://medium.com/@venurameedum/building-a-devops-control-room-monitoring-application-health-with-prometheus-and-grafana-321c95259d06'
   },
   {
-    id: 2,
+    id: 3,
     title: 'Implementing GitOps: Zero Downtime Deployments',
     excerpt: 'Implementing GitOps practices to achieve seamless, zero downtime deployments for microservices architectures.',
     date: 'Recent',
@@ -23,7 +32,7 @@ const blogPosts = [
     link: 'https://medium.com/@venurameedum/implementing-gitops-achieving-zero-downtime-deployments-for-a-microservices-architecture-b16a17588c3e'
   },
   {
-    id: 3,
+    id: 4,
     title: 'Zero to Cloud: Deploying Your First AWS Server with Terraform',
     excerpt: 'A comprehensive guide to provisioning and deploying your first AWS EC2 server using Terraform for Infrastructure as Code (IaC).',
     date: 'Recent',
@@ -32,7 +41,7 @@ const blogPosts = [
     link: 'https://medium.com/@venurameedum/zero-to-cloud-deploying-your-first-aws-server-with-terraform-520f742504e3'
   },
   {
-    id: 4,
+    id: 5,
     title: 'Enterprise-Grade CI/CD Pipeline for React & Go',
     excerpt: 'Learn how to build a robust CI/CD pipeline using Docker, GitHub Actions, and AWS for modern web applications.',
     date: 'Recent',
@@ -41,7 +50,7 @@ const blogPosts = [
     link: 'https://medium.com/@venurameedum/how-to-build-an-enterprise-grade-ci-cd-pipeline-for-react-go-using-docker-github-actions-aws-bd971c7d079b'
   },
   {
-    id: 5,
+    id: 6,
     title: 'Automating MERN Stack Deployments',
     excerpt: 'A complete walkthrough on automating MERN stack deployments using Docker, Jenkins, and Trivy for security scanning.',
     date: 'Recent',
@@ -50,7 +59,7 @@ const blogPosts = [
     link: 'https://medium.com/@venurameedum/automating-mern-stack-deployments-with-docker-jenkins-and-trivy-ca7880bfefeb'
   },
   {
-    id: 6,
+    id: 7,
     title: 'React & Laravel CI/CD Pipeline on AWS EC2',
     excerpt: 'The ultimate guide to setting up a Jenkins CI/CD pipeline to deploy a React and Laravel full-stack application on AWS.',
     date: 'Recent',
@@ -59,7 +68,7 @@ const blogPosts = [
     link: 'https://medium.com/@venurameedum/the-ultimate-guide-to-deploying-a-react-laravel-app-with-a-jenkins-ci-cd-pipeline-on-aws-ec2-4cfd9daafd2a'
   },
   {
-    id: 7,
+    id: 8,
     title: 'Auto-Deploying a React Vite App on AWS EC2',
     excerpt: 'Discover how to automatically deploy a blazing-fast React Vite frontend to an AWS EC2 instance using GitHub Actions.',
     date: 'Recent',
@@ -68,7 +77,7 @@ const blogPosts = [
     link: 'https://medium.com/@venurameedum/a-complete-guide-to-auto-deploying-a-react-vite-app-on-aws-ec2-using-github-actions-dffaf833fa1b'
   },
   {
-    id: 8,
+    id: 9,
     title: 'Auto-Deploying a Node.js App on AWS EC2',
     excerpt: 'A step-by-step tutorial on configuring GitHub Actions to automatically deploy your Node.js backend to AWS.',
     date: 'Recent',
@@ -77,7 +86,7 @@ const blogPosts = [
     link: 'https://medium.com/@venurameedum/a-complete-guide-to-auto-deploying-a-node-js-app-on-aws-ec2-using-github-actions-1b5bd0b7d5d7'
   },
   {
-    id: 9,
+    id: 10,
     title: 'Jenkins Installation on AWS EC2 Instance',
     excerpt: 'A beginner-friendly, step-by-step guide on how to successfully install and configure Jenkins on an Amazon EC2 Linux server.',
     date: 'Recent',

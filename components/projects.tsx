@@ -95,6 +95,16 @@ const projects = [
     ],
   },
   {
+    id: 15,
+    title: 'Automating AWS DNS Pinholes with Go',
+    category: 'devOps',
+    description: 'A comprehensive guide to automating AWS DNS pinholes and managing Route 53 records programmatically using Go.',
+    tags: ['Go', 'AWS', 'Route 53', 'Automation'],
+    preview: 'https://medium.com/@venurameedum/automating-aws-dns-pinholes-with-go-a489909f0afc',
+    github: '',
+    images: ['https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg'],
+  },
+  {
     id: 13,
     title: 'Monitoring with Prometheus & Grafana',
     category: 'devOps',
@@ -285,8 +295,8 @@ export function Projects() {
               key={category}
               onClick={() => setActiveCategory(category)}
               className={`px-6 py-2 rounded-full font-semibold text-sm capitalize transition-all ${activeCategory === category
-                  ? 'bg-blue-500 text-white'
-                  : 'glass text-slate-300 hover:text-white'
+                ? 'bg-blue-500 text-white'
+                : 'glass text-slate-300 hover:text-white'
                 }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -511,8 +521,8 @@ export function Projects() {
                         <motion.button
                           key={idx}
                           className={`rounded-full transition-all ${idx === previewModal.imageIndex
-                              ? 'w-3 h-3 bg-white'
-                              : 'w-2 h-2 bg-white/50 hover:bg-white/70'
+                            ? 'w-3 h-3 bg-white'
+                            : 'w-2 h-2 bg-white/50 hover:bg-white/70'
                             }`}
                           onClick={() =>
                             setPreviewModal((prev) => ({
